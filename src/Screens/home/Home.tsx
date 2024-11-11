@@ -1,7 +1,8 @@
 import { Grid, Grid2 } from "@mui/material";
 import { Chatbot } from "./components/chatbot";
 import escudo from "../../assets/logos/escudo.png";
-
+import { MenuBanorte } from "./components/Menu";
+import Banorte from "../../logos/Banorte.png"
 
 const estiloImagen = {
   width: "60%",
@@ -22,13 +23,13 @@ export const Home = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-       //background: "red",
+        //background: "red",
       }}
       container
       direction="row"
-      //overflow="auto"
+    //overflow="auto"
     >
-<Grid2 sx={{background: "red"}}>
+      {/* <Grid2 sx={{background: "red"}}>
 hola0
 </Grid2 >
 
@@ -42,11 +43,34 @@ hola1
 
 <Grid2 sx={{background: "black"}}>
   hola3
-</Grid2>
-<Chatbot/>
+</Grid2> */}
 
 
-       {/* <Grid
+      <Grid sx={{ height: "7vh", }} >
+        <MenuBanorte   />
+      </Grid>
+
+      <Grid
+        item
+        sx={{
+          // height: "100%",
+          height: "93vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        {/* <TutorialBox initialState={0} endState={8} /> */}
+
+        <img src={Banorte} alt="Escudo" style={estiloImagen} />
+      </Grid>
+
+
+      <Chatbot />
+
+
+
+      {/* <Grid
         item
         sx={{
           // height: "100%",
@@ -64,16 +88,4 @@ hola1
   );
 };
 
-{
-  /* <Grid gridArea={"header"} sx={{ height: "8vh" }}>
-        <Header
-          details={{
-            name1: "Inicio",
-            path1: "../home",
-            name2: "",
-            path2: "#",
-            name3: "",
-          }}
-        />
-      </Grid> */
-}
+
