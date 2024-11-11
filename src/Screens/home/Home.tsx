@@ -1,4 +1,4 @@
-import { Grid, Grid2 } from "@mui/material";
+import { Grid2,  } from "@mui/material";
 import { Chatbot } from "./components/chatbot";
 import escudo from "../../assets/logos/escudo.png";
 import { MenuBanorte } from "./components/Menu";
@@ -16,7 +16,7 @@ if (window.innerWidth >= 600) {
 
 export const Home = () => {
   return (
-    <Grid
+    <Grid2
       sx={{
         width: "100%",
         height: "100vh",
@@ -29,29 +29,29 @@ export const Home = () => {
       direction="row"
     //overflow="auto"
     >
-      {/* <Grid2 sx={{background: "red"}}>
+      {/* <Grid22 sx={{background: "red"}}>
 hola0
-</Grid2 >
+</Grid22 >
 
-<Grid2 sx={{background: "blue"}}>
+<Grid22 sx={{background: "blue"}}>
 hola1
-</Grid2>
+</Grid22>
 
-<Grid2 sx={{background: "green"}}>
+<Grid22 sx={{background: "green"}}>
   hola2
-</Grid2>
+</Grid22>
 
-<Grid2 sx={{background: "black"}}>
+<Grid22 sx={{background: "black"}}>
   hola3
-</Grid2> */}
+</Grid22> */}
 
 
-      <Grid sx={{ height: "7vh", }} >
+      <Grid2 sx={{ height: "7vh", }} >
         <MenuBanorte   />
-      </Grid>
+      </Grid2>
 
-      <Grid
-        item
+      <Grid2
+       
         sx={{
           // height: "100%",
           height: "93vh",
@@ -62,15 +62,15 @@ hola1
       >
         {/* <TutorialBox initialState={0} endState={8} /> */}
 
-        <img src={Banorte} alt="Escudo" style={estiloImagen} />
-      </Grid>
+        <img src={Banorte} alt="Banorte" style={estiloImagen} />
+      </Grid2>
 
 
       <Chatbot />
 
 
 
-      {/* <Grid
+      {/* <Grid2
         item
         sx={{
           // height: "100%",
@@ -83,8 +83,8 @@ hola1
       >
   
    
-      </Grid>  */}
-    </Grid>
+      </Grid2>  */}
+    </Grid2>
   );
 };
 
